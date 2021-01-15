@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+            ;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 8px 10px;
+            text-decoration: none;
+            display: block;
+            background-color: burlywood;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            margin-top: 3px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        iframe {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            background-color: bisque;
+            margin-top: 10px;
+        }
+
+        .main {
+            float: left;
+            background-color: lightblue;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .logo{
+            padding: 5px;
+            border: red solid 2px;
+            margin-right: 20px;
+            background-image: url("logo.PNG");
+            background-repeat: no-repeat;        
+        }
+
+        .logar{
+            float: right;            
+        }
+        .logar a{
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <span class="logo">logomarca</span>
+
+        <!--menu-->
+        <div class="dropdown">
+            <button class="dropbtn">Cadastros</button>
+            <div class="dropdown-content">
+                <a href="cadastrocliente.html" target="meuframe"> <i class="material-icons">access_alarm</i> Cliente</a>
+                <a href="cadastroequipamento.html" target="meuframe"><i class="material-icons">face</i> Equipamento</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Consultas</button>
+            <div class="dropdown-content">
+                <a href="cadastrocliente.html" target="meuframe"> <i class="material-icons">access_alarm</i> Cliente</a>
+                <a href="cadastroequipamento.html" target="meuframe"><i class="material-icons">face</i> Equipamento</a>
+            </div>
+        </div>
+        <!--Logar-->
+        <span class="logar"><a href="login.html" target="meuframe">Logar</a></span>
+
+    </div>
+
+
+
+    <iframe src="" name="meuframe"></iframe>
+</body>
+
+</html>
